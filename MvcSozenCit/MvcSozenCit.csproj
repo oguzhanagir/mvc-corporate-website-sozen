@@ -127,7 +127,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,6 +158,23 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="sozenFrontend\about.html" />
+    <Content Include="sozenFrontend\assets\css\bootstrap.min.css" />
+    <Content Include="sozenFrontend\assets\css\style.css" />
+    <Content Include="sozenFrontend\assets\images\houseillustration.png" />
+    <Content Include="sozenFrontend\assets\images\itemimage.png" />
+    <Content Include="sozenFrontend\assets\images\services1.jpeg" />
+    <Content Include="sozenFrontend\assets\images\services2.jpeg" />
+    <Content Include="sozenFrontend\assets\images\services3.jpeg" />
+    <Content Include="sozenFrontend\assets\images\logo.png" />
+    <Content Include="sozenFrontend\assets\images\ürünfoto1.png" />
+    <Content Include="sozenFrontend\assets\images\ürünfoto2.png" />
+    <Content Include="sozenFrontend\assets\images\ürünfoto3.png" />
+    <Content Include="sozenFrontend\contact.html" />
+    <Content Include="sozenFrontend\gallery.html" />
+    <Content Include="sozenFrontend\index.html" />
+    <Content Include="sozenFrontend\productdetail.html" />
+    <Content Include="sozenFrontend\products.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -169,6 +189,14 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="sozenFrontend\LICENSE" />
+    <Content Include="Views\Shared\Layout.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\ProductList.cshtml" />
+    <Content Include="Views\Product\Footer.cshtml" />
+    <Content Include="Views\Product\Newsletter.cshtml" />
+    <Content Include="Views\About\MainAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
