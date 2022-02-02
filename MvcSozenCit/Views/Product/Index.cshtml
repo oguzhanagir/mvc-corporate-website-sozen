@@ -1,11 +1,57 @@
-﻿
+﻿@model IEnumerable<EntityLayer.Concrete.Product>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
+<div class="_header_online_wrap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="_header_online_content">
+                <div class="_header_online_content_txt">
+                    <p class="_header_online_content_title3">Hoş Geldiniz</p>
+                    <h4 class="_header_online_content_title1 mt-5">Ürünler</h4>
+                    <p class="_header_online_content_title2">Şirket Hakkında Alt Açıklama.</p>
+                </div>
+            </div>
+            <div class="_header_online_img">
+                <img src="~/sozenFrontend/assets/images/houseillustration.png" alt="header-back">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product Start -->
+<div class="feature-01">
+    <div class="container">
+        <div class="flex-wrapper-one">
+            <div class="row">
 
-@Html.Action("ProductList","Product")
-@Html.Action("Newsletter", "Product")
-@Html.Action("MainAbout", "About")
-@Html.Action("Footer","Product")
+                @foreach(var x in Model)
+                {
+                    <div class="col-4">
+                        <div class="card-01 mt-5">
+                            <img alt=""
+                                 class="image"
+                                 src="@x.ProductImage" />
+                            <p class="ueruen-baslik">@x.Category.CategoryName</p>
+                            <p class="ueruen-aciklama">@x.ProductTitle</p>
+                            <p class="ueruen-aciklama" style="width:350px; height:150px; max-width:300px;">@x.ProductContent.Substring(0, x.ProductContent.Substring(0, 100).LastIndexOf(""))...</p>
+                            @*<p class="ueruen-aciklama">Tarih: @x.ProductDate</p>*@
+                        </div>
+                    </div>
+                  
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product End -->
+
+
+
+@Html.Action("Newsletter", "Home")
+@Html.Action("Footer", "Home")

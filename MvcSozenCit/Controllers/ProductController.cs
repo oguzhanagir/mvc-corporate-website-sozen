@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,23 +9,29 @@ namespace MvcSozenCit.Controllers
 {
     public class ProductController : Controller
     {
+        ProductManager pm = new ProductManager();
         // GET: Product
         public ActionResult Index()
         {
+            var productlist = pm.GetAll();
+            return View(productlist);
+        }
+
+        public ActionResult ProductDetails()
+        {
             return View();
         }
-        public PartialViewResult ProductList()
+        public PartialViewResult ProductCover()
         {
             return PartialView();
         }
-     
-        public PartialViewResult Newsletter()
+        public PartialViewResult ProductReadAll()
         {
             return PartialView();
         }
-        public PartialViewResult Footer()
+        public ActionResult ProductByCategory()
         {
-            return PartialView();
+            return View();
         }
     }
 }

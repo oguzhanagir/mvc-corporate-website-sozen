@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="_header_online_wrap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="_header_online_content">
+                <div class="_header_online_content_txt">
+                    <p class="_header_online_content_title3">Hoş Geldiniz</p>
+                    <h4 class="_header_online_content_title1 mt-5">Hakkımızda</h4>
+                    <p class="_header_online_content_title2">Şirket Hakkında Alt Açıklama.</p>
+                </div>
+            </div>
+            <div class="_header_online_img">
+                <img src="~/sozenFrontend/assets/images/houseillustration.png" alt="header-back">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Start -->
+
+<div class="feature-02-two">
+    <div class="feature-02">
+        <div class="flex-wrapper-one">
+            <img alt=""
+                 class="image "
+                 src="https://static.overlay-tech.com/assets/bccff9d2-f835-4496-bb28-78fb89b0c1fc.png" 
+                 />
+            <div class="flex-wrapper-two">
+                <div class="text">
+                    <p class="sirket-hakkinda-baslik">
+                        Şirket Hakkında Başlık
+                    </p>
+                    <p class="sirket-hakkinda-aciklamalar">
+                        Şirket Hakkında Açıklamalar
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="countdown"></div>
+        <div class="flex-wrapper-one" style="margin-top:250px;">
+
+            <div class="">
+                <div class="text">
+                    <p class="sirket-hakkinda-baslik">
+                        Şirket Hakkında Başlık
+                    </p>
+                    <p class="sirket-hakkinda-aciklamalar">
+                        Şirket Hakkında Açıklamalar
+                    </p>
+                </div>
+            </div>
+            <img alt=""
+                 class="image"
+                 src="https://static.overlay-tech.com/assets/bccff9d2-f835-4496-bb28-78fb89b0c1fc.png" 
+                 style="margin-left:350px;"/>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+@Html.Action("Newsletter", "Home")
+@Html.Action("Footer", "Home")
