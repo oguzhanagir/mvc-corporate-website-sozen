@@ -1,4 +1,5 @@
-﻿@model IEnumerable<EntityLayer.Concrete.Product>
+﻿
+@model IEnumerable<EntityLayer.Concrete.Product>
 
 @{
     ViewBag.Title = "Index";
@@ -27,27 +28,30 @@
         <div class="flex-wrapper-one">
             <div class="row">
 
-                @foreach(var x in Model)
+                @foreach (var x in Model)
                 {
                     <div class="col-4">
                         <div class="card-01 mt-5">
-                            <img alt=""
-                                 class="image"
-                                 src="@x.ProductImage" />
-                            <p class="ueruen-baslik">@x.Category.CategoryName</p>
-                            <p class="ueruen-aciklama">@x.ProductTitle</p>
-                            <p class="ueruen-aciklama" style="width:350px; height:150px; max-width:300px;">@x.ProductContent.Substring(0, x.ProductContent.Substring(0, 100).LastIndexOf(""))...</p>
-                            @*<p class="ueruen-aciklama">Tarih: @x.ProductDate</p>*@
-                        </div>
+                            <a href="/Product/ProductDetails/@x.ProductID">
+                                <img alt=""
+                                     class="image"
+                                     src="@x.ProductImage"><img /></a>
+                                <p class="ueruen-baslik">@x.Category.CategoryName</p>
+                                <p class="ueruen-aciklama">@x.ProductTitle</p>
+                                <p class="ueruen-aciklama" style="width:350px; height:150px; max-width:300px;">@x.ProductContent.Substring(0, x.ProductContent.Substring(0, 100).LastIndexOf(""))...</p>
+                                @*<p class="ueruen-aciklama">Tarih: @x.ProductDate</p>*@
+</div>
                     </div>
-                  
+
                 }
 
 
             </div>
         </div>
     </div>
+
 </div>
+
 
 <!-- Product End -->
 

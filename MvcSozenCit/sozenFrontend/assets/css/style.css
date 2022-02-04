@@ -1906,15 +1906,20 @@ a {
   font-size: 34px;
   color: #2D1D61 !important;
 }
+
+.product-p-div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 .product-text{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+ 
   line-height: 28px;
   font-size: 16px;
   font-weight: 400;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  
   border-radius: 30px;
-  padding: 20px 20px 20px 20px;
+ 
 }
 
 /* Product Content End */

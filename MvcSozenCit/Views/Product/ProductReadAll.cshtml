@@ -1,25 +1,25 @@
-﻿<!-- Product Content Start -->
+﻿@model IEnumerable<EntityLayer.Concrete.Product>
+@foreach (var item in Model)
+{
 
-<div class="container">
-    <div class="row">
-        <div class="product-content">
-            <img src="~/sozenFrontend/assets/images/ürünfoto1.png" alt="">
-            <h3 class="text-center mt-5 product-title">Ürün Adı</h3>
-            <p class=" product-text mt-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dignissimos amet itaque aut incidunt quas, sint nam numquam, odio dolorum quibusdam repudiandae velit esse quidem quos voluptatem fugit excepturi impedit!
-                A aspernatur, ipsam sint, fuga esse obcaecati architecto ducimus ipsa dolores asperiores ab quo beatae quis porro corporis? Laborum quia ut totam qui quam delectus expedita soluta quo. Magnam, doloremque?
-                Soluta, quidem a error ex modi cumque ab doloremque! Et cumque labore, totam iste placeat dicta beatae impedit molestiae ducimus. Atque voluptas pariatur sequi optio, eveniet sunt sit vero quis?
-                Necessitatibus, eum. Tempora quibusdam, sed quidem corporis et beatae nobis, ipsa maiores sapiente ipsum maxime, aspernatur dolores nostrum atque similique temporibus labore illum voluptate odio! Molestiae velit quas quidem impedit!
-                Nisi blanditiis nihil incidunt quisquam accusamus sequi sed, molestiae illo tenetur. A cumque animi unde deserunt cupiditate, voluptatum velit, eius dolorum architecto sed magni eligendi aspernatur quasi quisquam rem dolorem.
-                Quidem tempore deserunt facere ducimus sed ut tempora, cumque, asperiores, consectetur quisquam dolorum accusamus magni soluta recusandae vero optio odit ratione. Tenetur, vero. Fuga quidem sed ex distinctio possimus repellendus.
-                Tempore vel exercitationem recusandae corporis necessitatibus nam ea libero quam incidunt repudiandae delectus distinctio sit tempora assumenda quidem dolor, quos dolores asperiores reiciendis ut fugiat. Eos officia velit alias exercitationem!
-                Saepe tempore quaerat aliquam voluptates consequuntur, vitae non, sapiente natus est incidunt voluptatibus itaque eaque quisquam laboriosam facilis accusamus recusandae. Laudantium unde placeat eum accusamus accusantium dolorem temporibus minima nesciunt?
-                Fuga commodi ipsum nam officia beatae ea debitis placeat impedit sed? Obcaecati tempora dolorum, facere rem necessitatibus aliquid totam quam praesentium recusandae soluta rerum numquam enim hic commodi accusamus nemo.
-                Itaque sequi minima tempore ratione laudantium, blanditiis eveniet tenetur esse odit! Animi, id nulla corrupti non quas dicta sequi ab iure nemo atque, laboriosam dolorem. Tempore, facilis modi. Eum, architecto!
-            </p>
+
+    <!-- Product Content Start -->
+
+    <div class="container">
+        <div class="row">
+            <div class="product-content">
+                <img src="@item.ProductImage" style="width:800px; height:500px; margin:auto; " alt="ürün">
+                <h3 class="text-center mt-5 product-title">Ürün Adı</h3>
+                <div class="product-p-div">
+                    <p class=" product-text mt-5" style="line-height: 32px; padding:50px; text-align: left; font-weight:500;">
+                        @item.ProductContent
+
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 
 <!-- Product Content End -->
+}

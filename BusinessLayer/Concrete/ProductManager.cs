@@ -17,5 +17,10 @@ namespace BusinessLayer.Concrete
             return repoproduct.List();
         }
 
+        public List<Product> ProductByID(int id)
+        {
+            return repoproduct.List().Where(x => x.ProductID == id).ToList();
+        }
+
     }
 }

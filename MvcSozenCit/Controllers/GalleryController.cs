@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,12 @@ namespace MvcSozenCit.Controllers
 {
     public class GalleryController : Controller
     {
+        GalleryManager gm = new GalleryManager();
         // GET: Gallery
         public ActionResult Index()
         {
-            return View();
+            var gallerylist = gm.GetAll();
+            return View(gallerylist);
         }
     }
 }

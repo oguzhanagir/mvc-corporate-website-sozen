@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<EntityLayer.Concrete.Gallery>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/Layout.cshtml";
@@ -35,54 +36,25 @@
     <div class="text-center mt-5">
         <p class="urunler ">Galeri</p>
     </div>
-    <div class="">
-        <div class="flex-wrapper-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 mt-5">
-                        <img alt=""
-                             class="image"
-                             src="https://static.overlay-tech.com/assets/6f3be505-bb87-46b8-8b51-75f2515c0a3e.png" />
-
-                    </div>
-                    <div class=" col-4 mt-5">
-                        <img alt=""
-                             class="image"
-                             src="https://static.overlay-tech.com/assets/6f3be505-bb87-46b8-8b51-75f2515c0a3e.png" />
-
-                    </div>
-                    <div class=" col-4 mt-5">
-                        <img alt=""
-                             class="image"
-                             src="https://static.overlay-tech.com/assets/6f3be505-bb87-46b8-8b51-75f2515c0a3e.png" />
-
-                    </div>
-                    <div class=" col-4 mt-5">
-                        <img alt=""
-                             class="image"
-                             src="https://static.overlay-tech.com/assets/6f3be505-bb87-46b8-8b51-75f2515c0a3e.png" />
-
-                    </div>
-                    <div class=" col-4 mt-5">
-                        <img alt=""
-                             class="image"
-                             src="https://static.overlay-tech.com/assets/6f3be505-bb87-46b8-8b51-75f2515c0a3e.png" />
-
-                    </div>
-                    <div class=" col-4 mt-5">
-                        <img alt=""
-                             class="image"
-                             src="https://static.overlay-tech.com/assets/6f3be505-bb87-46b8-8b51-75f2515c0a3e.png" />
-
-                    </div>
-
+   
+        <div class="">
+            <div class="flex-wrapper-one">
+                <div class="container">
+                    <div class="row">
+                        @foreach (var x in Model)
+                        {
+                            <div class="col-4 mt-5">
+                                <img alt=""
+                                     class="image"
+                                     src="@x.GalleryImage" />
+                            </div>
+                        }
+                        </div>
                 </div>
             </div>
-
-
         </div>
+    
     </div>
-</div>
 
 <!-- Gallery End -->
 

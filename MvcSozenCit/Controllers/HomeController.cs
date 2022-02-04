@@ -11,6 +11,7 @@ namespace MvcSozenCit.Controllers
     {
 
         ProductManager pm = new ProductManager();
+        AboutManager abm = new AboutManager();
         public ActionResult Index()
         {
             return View();
@@ -34,9 +35,11 @@ namespace MvcSozenCit.Controllers
         {
             return PartialView();
         }
+
         public PartialViewResult Footer()
         {
-            return PartialView();
+            var aboutcontentlist = abm.GetAll();
+            return PartialView(aboutcontentlist);
         }
 
 

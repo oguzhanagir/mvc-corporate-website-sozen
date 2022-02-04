@@ -1,0 +1,20 @@
+﻿@model IEnumerable<EntityLayer.Concrete.About>
+
+<div class="flex-wrapper-one">
+    @foreach (var x in Model)
+    {
+        <img alt=""
+             class="image "
+             src="https://static.overlay-tech.com/assets/bccff9d2-f835-4496-bb28-78fb89b0c1fc.png" />
+        <div class="flex-wrapper-two">
+            <div class="text">
+                <p class="sirket-hakkinda-baslik">
+                    Şirket Hakkında Başlık
+                </p>
+                <p class="sirket-hakkinda-aciklamalar">
+                    @x.AboutContent1
+                </p>
+            </div>
+        </div>
+    }
+</div>

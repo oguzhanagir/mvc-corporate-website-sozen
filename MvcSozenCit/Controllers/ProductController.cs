@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,11 +26,16 @@ namespace MvcSozenCit.Controllers
         {
             return PartialView();
         }
-        public PartialViewResult ProductReadAll()
+        public PartialViewResult ProductReadAll(int id)
         {
-            return PartialView();
+            var ProductDetailsList = pm.ProductByID(id);
+            return PartialView(ProductDetailsList);
         }
         public ActionResult ProductByCategory()
+        {
+            return View();
+        }
+        public ActionResult AdminProductList()
         {
             return View();
         }

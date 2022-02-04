@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<EntityLayer.Concrete.About>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/Layout.cshtml";
@@ -25,40 +26,10 @@
 
 <div class="feature-02-two">
     <div class="feature-02">
-        <div class="flex-wrapper-one">
-            <img alt=""
-                 class="image "
-                 src="https://static.overlay-tech.com/assets/bccff9d2-f835-4496-bb28-78fb89b0c1fc.png" 
-                 />
-            <div class="flex-wrapper-two">
-                <div class="text">
-                    <p class="sirket-hakkinda-baslik">
-                        Şirket Hakkında Başlık
-                    </p>
-                    <p class="sirket-hakkinda-aciklamalar">
-                        Şirket Hakkında Açıklamalar
-                    </p>
-                </div>
-            </div>
-        </div>
+        @Html.Action("AboutContent1", "About")
         <div class="countdown"></div>
-        <div class="flex-wrapper-one" style="margin-top:250px;">
+        @Html.Action("AboutContent2", "About")
 
-            <div class="">
-                <div class="text">
-                    <p class="sirket-hakkinda-baslik">
-                        Şirket Hakkında Başlık
-                    </p>
-                    <p class="sirket-hakkinda-aciklamalar">
-                        Şirket Hakkında Açıklamalar
-                    </p>
-                </div>
-            </div>
-            <img alt=""
-                 class="image"
-                 src="https://static.overlay-tech.com/assets/bccff9d2-f835-4496-bb28-78fb89b0c1fc.png" 
-                 style="margin-left:350px;"/>
-        </div>
     </div>
 </div>
 <!-- About End -->

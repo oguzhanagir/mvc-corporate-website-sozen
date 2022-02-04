@@ -1,28 +1,35 @@
-﻿<!-- About Start -->
+﻿@model IEnumerable<EntityLayer.Concrete.About>
+
+
+<!-- About Start -->
 
 <div class="feature-02-two">
     <div class="feature-02">
+ 
         <div class="flex-wrapper-one">
             <img alt=""
                  class="image"
                  src="https://static.overlay-tech.com/assets/bccff9d2-f835-4496-bb28-78fb89b0c1fc.png" />
             <div class="flex-wrapper-two">
-                <div class="text">
-                    <div class="rectangle-64"></div>
-                    <p class="sirket-hakkinda-baslik">
-                        Şirket Hakkında Başlık
-                    </p>
-                    <p class="sirket-hakkinda-aciklamalar">
-                        Şirket Hakkında Açıklamalar
-                    </p>
+                @foreach (var x in Model)
+                {
+                    <div class="text">
+                        <div class="rectangle-64"></div>
+                        <p class="sirket-hakkinda-baslik">
+                            Şirket Hakkında Başlık
+                        </p>
+                        <p class="sirket-hakkinda-aciklamalar">
+                            @x.AboutContent1
+                        </p>
+                    </div>
+                }
+                    <div class="button-sell-full-guidelines">
+                        
+
+                        <button class="_header_online_play_btn-2 " onclick="location.href='about.html#about-text'">Daha Fazla</button>
+
+                    </div>
                 </div>
-                <div class="button-sell-full-guidelines">
-
-
-                    <button class="_header_online_play_btn-2 " onclick="location.href='about.html#about-text'">Daha Fazla</button>
-
-                </div>
-            </div>
         </div>
         <div class="countdown"></div>
     </div>
