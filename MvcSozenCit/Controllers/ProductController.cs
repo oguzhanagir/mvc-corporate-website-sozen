@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
-
+using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +38,28 @@ namespace MvcSozenCit.Controllers
         }
         public ActionResult AdminProductList()
         {
+            var productlist = pm.GetAll();  
+            return View(productlist);
+        }
+        [HttpGet]
+        public ActionResult AddNewProduct()
+        {
+            Context c = new Context();
+
+            List<SelectListItem> values = (from x in c.Categories.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryID.ToString()
+                                           }).ToList();
+            ViewBag.values = values;
             return View();
+        }
+        [HttpPost]
+        public ActionResult AddNewProduct(Product p)
+        {
+            pm.ProductAddBl(p);
+            return RedirectToAction("AdminProductList");
         }
     }
 }

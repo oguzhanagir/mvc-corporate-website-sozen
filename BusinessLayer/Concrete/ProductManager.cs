@@ -22,5 +22,14 @@ namespace BusinessLayer.Concrete
             return repoproduct.List().Where(x => x.ProductID == id).ToList();
         }
 
+        public int ProductAddBl(Product p)
+        {
+            if (p.ProductTitle == "" || p.ProductImage == "" || p.ProductTitle.Length <= 5 || p.ProductContent.Length <= 10 )
+            {
+                return -1;
+            }
+            return repoproduct.Insert(p);
+           
+        }
     }
 }

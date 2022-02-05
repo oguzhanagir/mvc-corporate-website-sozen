@@ -156,10 +156,9 @@
    ========================================================================== */
 
 body {
-    font-family: 'Circular Std Book';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+    
+    font-weight: 600;
+    font-size: 22px;
     color: #71748d;
     background-color: #efeff6;
     -webkit-font-smoothing: antialiased;
@@ -173,7 +172,7 @@ h5,
 h6 {
     color: #3d405c;
     margin: 0px 0px 15px 0px;
-    font-family: 'Circular Std Medium';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
 }
 
 h1 {
@@ -247,14 +246,15 @@ label {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
-    font-size: 15px;
-    color: #71748d;
+    font-size: 24px;
+    color: #000;
+    font-weight:600;
 }
 
 .form-control {
     display: block;
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.42857143;
     color: #71748d;
     background-color: #fff;
@@ -817,17 +817,17 @@ html body .display-7 {
     line-height: 30px;
 }
 
-.arrow li:before {
-    font-family: 'Font Awesome\ 5 Free';
-    font-weight: 900;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    font-size: 14px;
-    color: #ff407b;
-    content: '\f058';
-    font-style: initial;
-}
+    .arrow li:before {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+        font-weight: 900;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        font-size: 14px;
+        color: #ff407b;
+        content: '\f058';
+        font-style: initial;
+    }
 
 .bullet-check {
     position: relative;
@@ -838,17 +838,17 @@ html body .display-7 {
     line-height: 30px;
 }
 
-.bullet-check li:before {
-    font-family: 'Font Awesome\ 5 Free';
-    font-weight: 900;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    font-size: 14px;
-    color: #22ce77;
-    content: '\f00c';
-    font-style: initial;
-}
+    .bullet-check li:before {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+        font-weight: 900;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        font-size: 14px;
+        color: #22ce77;
+        content: '\f00c';
+        font-style: initial;
+    }
 
 
 /*----------------------- 
@@ -2027,14 +2027,14 @@ Pageheader
     font-size: 12px;
 }
 
-.page-breadcrumb .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
-    display: inline-block;
-    padding-right: .5rem;
-    color: #b1b1c0;
-    content: "\f105";
-    font-family: 'Font Awesome\ 5 Free';
-    font-weight: 600;
-}
+    .page-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: .5rem;
+        color: #b1b1c0;
+        content: "\f105";
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+        font-weight: 600;
+    }
 
 .page-breadcrumb .breadcrumb-item.active {
     color: #71728e;
@@ -2324,16 +2324,18 @@ Pageheader
 .product-thumbnail{ border:1px solid #e6e6f2; background-color: #fff; margin-bottom: 30px; }
 .product-img{ text-align: center; padding: 35px 0px;  }
 .product-img-head{position: relative;}
-.ribbons{
+.ribbons {
     -webkit-clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 100%, 50% 73%, 10% 100%, 10% 50%);
-clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 100%, 50% 73%, 10% 100%, 10% 50%);
-  
+    clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 100%, 50% 73%, 10% 100%, 10% 50%);
     position: absolute;
     top: 0px;
     background-color: #59b3ff;
     padding: 31px 15px;
     text-align: center;
-    left: 10px;  font-family: 'Circular Std Medium'; color: #fff;}
+    left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+    color: #fff;
+}
 
    .ribbons-text{transform: rotate(90deg);
     position: absolute;
@@ -2360,7 +2362,15 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 .product-rating{font-size: 12px;
     
     color: #ffa811;}
-.product-price{ position: absolute; top: 0; right: 0; font-size: 16px; color: #3d405c;font-family: 'Circular Std Medium'; line-height: 1;}
+.product-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    color: #3d405c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+    line-height: 1;
+}
 .product-btn{}
 .product-del{font-size: 14px; color: #71748d;}
 .product-sidebar{ background-color: #fff; border:1px solid #e6e6f2;  }
@@ -2441,14 +2451,14 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
     animation-play-state: paused;
 }
 .product-colors label:before {
-     content: "\f00c";
+    content: "\f00c";
     position: absolute;
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
     font-weight: 900;
     padding: 0px;
     margin: 4px 8px;
     color: #fff;
-    font-size:  14px;
+    font-size: 14px;
 }
 
 
@@ -2545,24 +2555,23 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 }
 
 .quantity-button {
-  position: relative;
-  cursor: pointer;
-  border-left: 1px solid #e6e6f2;
-  width: 20px;
-  text-align: center;
-  color: #333;
-  font-size: 13px;
-  font-family: 'Circular Std Medium';
-  
-  line-height: 1.6;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  background-color: #efeff6;
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #e6e6f2;
+    width: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+    line-height: 1.6;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-color: #efeff6;
 }
 
 .quantity-button.quantity-up {
@@ -4510,11 +4519,11 @@ Pills vertical
     border-bottom: 2px solid #e6e6f2;
 }
 
-.table thead th,
-.table th {
-    color: #3d405c;
-    font-family: 'Circular Std Medium';
-}
+    .table thead th,
+    .table th {
+        color: #3d405c;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif !important;
+    }
 
 .table-bordered {
     border: 1px solid #e6e6f2;
@@ -4545,7 +4554,7 @@ tr.group,
 tr.group:hover {
     background-color: #5969ff !important;
     color: #fff;
-    font-family: 'Circular Std Medium';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
     font-size: 18px;
 }
 
@@ -5498,7 +5507,7 @@ Vertical Timeline - by CodyHouse.co
     height: 7em;
     font-size: 0.75em;
     line-height: 1.333333em;
-    font-family: Consolas, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
     padding: 5px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;

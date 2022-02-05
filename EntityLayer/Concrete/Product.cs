@@ -17,8 +17,9 @@ namespace EntityLayer.Concrete
 
         [StringLength(100)]
         public string ProductImage { get; set; }
+
         public DateTime ProductDate { get; set; }
-       
+
         public string ProductContent { get; set; }
 
         public int CategoryID { get; set; }
