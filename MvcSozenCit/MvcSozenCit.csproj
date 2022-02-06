@@ -135,6 +135,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CharController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -669,10 +671,15 @@
     <Content Include="Views\Shared\AdminLayout.cshtml" />
     <Content Include="Views\Product\AdminProductList.cshtml" />
     <Content Include="Views\Product\AddNewProduct.cshtml" />
+    <Content Include="Views\Product\UpdateProduct.cshtml" />
+    <Content Include="Views\Category\AdminCategoryList.cshtml" />
+    <Content Include="Views\About\UpdateAboutList.cshtml" />
+    <Content Include="Views\Contact\SendBox.cshtml" />
+    <Content Include="Views\Contact\MessageDetails.cshtml" />
+    <Content Include="Views\Char\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css.map" />

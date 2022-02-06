@@ -63,6 +63,10 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repository.cs" />
+    <Compile Include="Migrations\202202061146594_mig6.cs" />
+    <Compile Include="Migrations\202202061146594_mig6.designer.cs">
+      <DependentUpon>202202061146594_mig6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,7 +74,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202202061146594_mig6.resx">
+      <DependentUpon>202202061146594_mig6.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
       <Project>{7362edb9-c8d7-49bf-8d13-e24b3a2a79c8}</Project>

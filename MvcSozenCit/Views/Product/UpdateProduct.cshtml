@@ -1,12 +1,14 @@
 ﻿@model EntityLayer.Concrete.Product
 
 @{
-    ViewBag.Title = "AddNewProduct";
+    ViewBag.Title = "UpdateProduct";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-
 <form class="form-group" method="post">
+    @Html.Label("Product ID")
+    @Html.TextBoxFor(x => x.ProductID, new { @class = "form-control" })
+    <br />
     @Html.Label("Ürün Başlığı")
     @Html.TextBoxFor(x => x.ProductTitle, new { @class = "form-control" })
     <br />
@@ -30,3 +32,4 @@
 
     <button class="btn btn-rounded btn-success mt-3"> Kaydet</button>
 </form>
+

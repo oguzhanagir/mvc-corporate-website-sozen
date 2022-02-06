@@ -31,5 +31,30 @@ namespace BusinessLayer.Concrete
             return repoproduct.Insert(p);
            
         }
+
+        public int DeleteProductBL(int p)
+        {
+            Product product = repoproduct.Find(x => x.ProductID == p);
+            return repoproduct.Delete(product);
+        }
+
+        public Product FindProduct(int id)
+        {
+            return repoproduct.Find(x => x.ProductID == id);
+        }
+
+        public int UpdateProduct(Product p)
+        {
+
+            Product product = repoproduct.Find(x => x.ProductID == p.ProductID);
+            product.ProductTitle = p.ProductTitle;
+            product.ProductContent = p.ProductContent;
+            product.ProductDate = p.ProductDate;
+            product.ProductImage = p.ProductImage;
+            product.CategoryID = p.CategoryID;
+            product.AuthorID = p.AuthorID;
+
+            return repoproduct.Update(product);
+        }
     }
 }

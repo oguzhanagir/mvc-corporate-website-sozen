@@ -1,4 +1,5 @@
 (function(window, document, $, undefined) {
+(function(window, document, $, undefined) {
     "use strict";
     $(function() {
 
@@ -266,7 +267,7 @@
 
         if ($('.ct-chart-pie').length) {
             var data = {
-                series: [5, 3, 4]
+                series: [1, 2, 9]
             };
 
             var sum = function(a, b) { return a + b };
@@ -281,7 +282,7 @@
 
         if ($('.ct-chart-donut').length) {
             new Chartist.Pie('.ct-chart-donut', {
-                series: [20, 10, 30, 40]
+                series: [50, 10, 30, 40]
             }, {
                 donut: true,
                 donutWidth: 60,

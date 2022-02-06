@@ -29,5 +29,16 @@ namespace MvcSozenCit.Controllers
             return View();
         }
 
+        public ActionResult SendBox()
+        {
+            var messagelist = cm.GetAll();
+            return View(messagelist);
+        }
+
+        public ActionResult MessageDetails(int id)
+        {
+            Contact contact = cm.GetContactDetails(id);
+            return View(contact);
+        }
     }
 }

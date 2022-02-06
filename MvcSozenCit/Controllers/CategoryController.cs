@@ -18,5 +18,12 @@ namespace MvcSozenCit.Controllers
 
             return View(categoryvalues);
         }
+
+        public ActionResult AdminCategoryList()
+        {
+            var categorylist = cm.GetAll();
+            return View(categorylist);
+
+        }
     }
 }
