@@ -124,7 +124,7 @@ a {
 ._header_online_nav_item {
     margin: 0 16px;
 }
-._active{
+/*._active{
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -133,7 +133,7 @@ a {
   color: #2D1D61 !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 20px;
-}
+}*/
 
 .line{
   color: #74DCDF; 
@@ -1031,7 +1031,7 @@ a {
     height: 151.65px;
     width: 296.91px;
     font-family: "Poppins";
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 45px;
     color: var(--black);
@@ -1493,7 +1493,7 @@ a {
 
  ._footer_online_content_3{
     
-    margin-left: 797px;
+    margin-left: 600px;
     position: absolute;
  }
 

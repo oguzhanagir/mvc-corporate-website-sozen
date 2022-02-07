@@ -147,7 +147,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin_login\admin_login.html" />
     <Content Include="admin_login\css\main_admin.css" />
     <Content Include="admin_login\css\util.css" />
     <Content Include="admin_login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
@@ -578,34 +577,6 @@
     <Content Include="Kontrol Paneli\assets\vendor\timeline\img\cd-icon-picture.svg" />
     <Content Include="Kontrol Paneli\assets\vendor\timeline\js\main.js" />
     <Content Include="Kontrol Paneli\assets\vendor\vector-map\jqvmap.css" />
-    <Content Include="Kontrol Paneli\index.html" />
-    <Content Include="Kontrol Paneli\pages\404-page.html" />
-    <Content Include="Kontrol Paneli\pages\blank-page-header.html" />
-    <Content Include="Kontrol Paneli\pages\bootstrap-select.html" />
-    <Content Include="Kontrol Paneli\pages\chart-c3.html" />
-    <Content Include="Kontrol Paneli\pages\chart-chartist.html" />
-    <Content Include="Kontrol Paneli\pages\chart-charts.html" />
-    <Content Include="Kontrol Paneli\pages\chart-gauge.html" />
-    <Content Include="Kontrol Paneli\pages\chart-morris.html" />
-    <Content Include="Kontrol Paneli\pages\chart-sparkline.html" />
-    <Content Include="Kontrol Paneli\pages\data-tables.html" />
-    <Content Include="Kontrol Paneli\pages\datepicker.html" />
-    <Content Include="Kontrol Paneli\pages\email-compose.html" />
-    <Content Include="Kontrol Paneli\pages\email-details.html" />
-    <Content Include="Kontrol Paneli\pages\form-elements.html" />
-    <Content Include="Kontrol Paneli\pages\form-validation.html" />
-    <Content Include="Kontrol Paneli\pages\general-table.html" />
-    <Content Include="Kontrol Paneli\pages\icon-flag.html" />
-    <Content Include="Kontrol Paneli\pages\icon-fontawesome.html" />
-    <Content Include="Kontrol Paneli\pages\icon-material.html" />
-    <Content Include="Kontrol Paneli\pages\icon-simple-lineicon.html" />
-    <Content Include="Kontrol Paneli\pages\icon-themify.html" />
-    <Content Include="Kontrol Paneli\pages\icon-weather.html" />
-    <Content Include="Kontrol Paneli\pages\inbox.html" />
-    <Content Include="Kontrol Paneli\pages\map-google.html" />
-    <Content Include="Kontrol Paneli\pages\map-vector.html" />
-    <Content Include="Kontrol Paneli\pages\message-chat.html" />
-    <Content Include="Kontrol Paneli\pages\widgets.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Kontrol Paneli\assets\vendor\fonts\circular-std\CircularStd-Black.woff" />
@@ -735,7 +706,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="sozenFrontend\about.html" />
     <Content Include="sozenFrontend\assets\css\bootstrap.min.css" />
     <Content Include="sozenFrontend\assets\css\style.css" />
     <Content Include="sozenFrontend\assets\images\houseillustration.png" />
@@ -747,11 +717,6 @@
     <Content Include="sozenFrontend\assets\images\ürünfoto1.png" />
     <Content Include="sozenFrontend\assets\images\ürünfoto2.png" />
     <Content Include="sozenFrontend\assets\images\ürünfoto3.png" />
-    <Content Include="sozenFrontend\contact.html" />
-    <Content Include="sozenFrontend\gallery.html" />
-    <Content Include="sozenFrontend\index.html" />
-    <Content Include="sozenFrontend\productdetail.html" />
-    <Content Include="sozenFrontend\products.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

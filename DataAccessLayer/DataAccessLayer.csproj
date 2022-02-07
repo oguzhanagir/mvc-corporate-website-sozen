@@ -60,6 +60,7 @@
     <Compile Include="Abstract\IGalleryDal.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Abstract\ISocialMediaDal.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repository.cs" />
@@ -70,6 +71,10 @@
     <Compile Include="Migrations\202202061745070_mig7.cs" />
     <Compile Include="Migrations\202202061745070_mig7.designer.cs">
       <DependentUpon>202202061745070_mig7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202071622526_mig8.cs" />
+    <Compile Include="Migrations\202202071622526_mig8.designer.cs">
+      <DependentUpon>202202071622526_mig8.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202061745070_mig7.resx">
       <DependentUpon>202202061745070_mig7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202071622526_mig8.resx">
+      <DependentUpon>202202071622526_mig8.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

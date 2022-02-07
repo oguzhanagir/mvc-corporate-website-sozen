@@ -18,6 +18,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Gallery> Galleries { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<SocialMedia> SocialMedias { get; set; }
         
     }
 }

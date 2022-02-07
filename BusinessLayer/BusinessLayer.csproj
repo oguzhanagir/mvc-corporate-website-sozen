@@ -47,6 +47,7 @@
     <Compile Include="Concrete\ContactManager.cs" />
     <Compile Include="Concrete\GalleryManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
+    <Compile Include="Concrete\SocialMediaManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

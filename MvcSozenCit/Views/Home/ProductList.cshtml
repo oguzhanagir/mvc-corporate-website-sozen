@@ -7,10 +7,10 @@
         <p class="urunler">Ürünler</p>
         <div class="flex-wrapper-one">
             <p class="ueruenler-hakkinda-kisa-aciklama">
-                Ürünler Hakkında Kısa Açıklama
+                Çit Direği, Bağ Direği, Beton Direği, İmalat ve Montaj 
             </p>
             <p class="tum-urunleri-goruntule">
-                <a href="#" style="color:#000336;">Tüm Ürünleri Görüntüle </a>
+                <a href="/Product/Index" style="color:#000336;">Tüm Ürünleri Görüntüle </a>
             </p>
         </div>
 
@@ -22,13 +22,13 @@
                     {
                         <div class="col-4">
                             <div class="card-01 mt-5">
-                                <img alt=""
-                                     class="image"
-                                     src="@x.ProductImage" />
-                                <p class="ueruen-baslik">@x.Category.CategoryName</p>
+                                <a href="/Product/ProductDetails/@x.ProductID"><img alt=""
+                                 class="image"
+                                 src="@x.ProductImage" /></a>
+                                
                                 <p class="ueruen-aciklama">@x.ProductTitle</p>
                                 <p class="ueruen-aciklama" style="width:350px; height:150px; max-width:300px;">@x.ProductContent.Substring(0,x.ProductContent.Substring(0,100).LastIndexOf(""))...</p>
-                                @*<p class="ueruen-aciklama">Tarih: @x.ProductDate</p>*@
+                                
                             </div>                  
                          </div>
                         if (x.ProductID == 3)

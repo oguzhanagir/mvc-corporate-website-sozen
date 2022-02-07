@@ -24,5 +24,11 @@ namespace BusinessLayer.Concrete
             }
             return repocategory.Insert(p);
         }
+
+        public int DeleteCategoryBL(int p)
+        {
+            Category category = repocategory.Find(x => x.CategoryID == p);
+            return repocategory.Delete(category);
+        }
     }
 }

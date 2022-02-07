@@ -41,5 +41,12 @@ namespace MvcSozenCit.Controllers
             cm.CategoryAddBL(p);
             return RedirectToAction("AdminCategoryList");
         }
+
+        public ActionResult CategoryDelete(int id)
+        {
+            cm.DeleteCategoryBL(id);
+            return RedirectToAction("AdminCategoryList");
+
+        }
     }
 }
