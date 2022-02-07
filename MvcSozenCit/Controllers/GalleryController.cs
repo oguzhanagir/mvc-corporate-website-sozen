@@ -8,10 +8,12 @@ using System.Web.Mvc;
 
 namespace MvcSozenCit.Controllers
 {
+    [AllowAnonymous]
     public class GalleryController : Controller
     {
         GalleryManager gm = new GalleryManager();
         // GET: Gallery
+       
         public ActionResult Index()
         {
             var gallerylist = gm.GetAll();

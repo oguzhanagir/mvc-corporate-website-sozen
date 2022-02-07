@@ -9,39 +9,46 @@ using System.Web.Mvc;
 
 namespace MvcSozenCit.Controllers
 {
+ 
     public class ProductController : Controller
     {
         ProductManager pm = new ProductManager();
         // GET: Product
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var productlist = pm.GetAll();
             return View(productlist);
         }
-
+        [AllowAnonymous]
         public ActionResult ProductDetails()
         {
             return View();
         }
+        [AllowAnonymous]
         public PartialViewResult ProductCover()
         {
             return PartialView();
         }
+        [AllowAnonymous]
         public PartialViewResult ProductReadAll(int id)
         {
             var ProductDetailsList = pm.ProductByID(id);
             return PartialView(ProductDetailsList);
         }
+        [AllowAnonymous]
         public ActionResult ProductByCategory()
         {
             return View();
         }
+        [AllowAnonymous]
         public ActionResult AdminProductList()
         {
             var productlist = pm.GetAll();
             return View(productlist);
         }
-        
+      
+
         [HttpGet]
         public ActionResult AddNewProduct()
         {
@@ -77,6 +84,7 @@ namespace MvcSozenCit.Controllers
             return RedirectToAction("AdminProductList");
 
         }
+       
 
         [HttpGet]
         public ActionResult UpdateProduct(int id)

@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace MvcSozenCit.Controllers
 {
+    [AllowAnonymous]
     public class AboutController : Controller
     {
         AboutManager abm = new AboutManager();

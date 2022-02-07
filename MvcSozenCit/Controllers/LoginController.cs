@@ -9,6 +9,7 @@ using System.Web.Security;
 
 namespace MvcSozenCit.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         // GET: Login
@@ -39,5 +40,7 @@ namespace MvcSozenCit.Controllers
                 return RedirectToAction("AdminLogin", "Login");
             }
         }
+
+
     }
 }

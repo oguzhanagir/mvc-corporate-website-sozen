@@ -8,20 +8,25 @@ using System.Web.Mvc;
 
 namespace MvcSozenCit.Controllers
 {
+    
     public class ContactController : Controller
     {
         // GET: Contact
-        ContactManager cm = new ContactManager();        
+        ContactManager cm = new ContactManager();
+
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();
         }
+        [AllowAnonymous]
         [HttpGet]
         public ActionResult SendMessage()
         {
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public ActionResult SendMessage(Contact p)
         {
@@ -29,6 +34,7 @@ namespace MvcSozenCit.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         public ActionResult SendBox()
         {
             var messagelist = cm.GetAll();
