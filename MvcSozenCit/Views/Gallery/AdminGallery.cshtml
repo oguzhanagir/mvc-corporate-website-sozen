@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "AdminGallery";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<form method="post" action="/Gallery/AdminGalleryAdd/">
+    <div class="modal-body">
+        <label>Fotoğraf Yolu</label>
+        <input type="text" name="CategoryName" class="form-control" />
+    </div>
+    <button class="btn btn-rounded btn-brand ml-4 mb-4 ">Kaydet</button>
+</form>
+

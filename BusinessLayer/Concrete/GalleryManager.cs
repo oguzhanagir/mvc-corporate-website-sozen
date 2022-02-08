@@ -16,5 +16,14 @@ namespace BusinessLayer.Concrete
         {
             return repogallery.List();
         }
+        public int GalleryAddBl(Gallery p)
+        {
+            if (p.GalleryImage == "")
+            {
+                return -1;
+            }
+            return repogallery.Insert(p);
+
+        }
     }
 }

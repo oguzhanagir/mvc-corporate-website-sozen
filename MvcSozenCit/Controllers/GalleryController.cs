@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
-
+using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,23 @@ namespace MvcSozenCit.Controllers
         {
             var gallerylist = gm.GetAll();
             return View(gallerylist);
+        }
+        public ActionResult AdminGallery()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult AdminGalleryAdd()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AdminCategoryAdd(Gallery p)
+        {
+            gm.GalleryAddBl(p);
+            return RedirectToAction("AdminGallery");
         }
     }
 }
